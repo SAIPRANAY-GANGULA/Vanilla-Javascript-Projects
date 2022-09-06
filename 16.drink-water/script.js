@@ -2,10 +2,11 @@ const smallCups = document.querySelectorAll(".cup.small");
 const liters = document.getElementById("liters");
 const remained = document.getElementById("remained");
 const percentage = document.getElementById("percentage");
-const totalLiters = 4;
+const goal = document.getElementById("goal");
+const totalLiters = 5;
 
 liters.innerText = `${totalLiters} L`;
-
+goal.innerText = `Goal: ${totalLiters} Liters`;
 smallCups.forEach((cup, index) => {
   cup.innerHTML = `${(totalLiters * 1000) / smallCups.length} ml`;
   cup.addEventListener("click", () => fillSmallCups(index));
