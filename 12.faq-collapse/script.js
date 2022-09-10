@@ -1,10 +1,10 @@
-const toggleButtons = document.querySelectorAll(".faq-toggle");
-const faqs = document.querySelectorAll(".faq");
+const toggleButtons = document.querySelectorAll('.faq-toggle');
+const faqs = document.querySelectorAll('.faq');
 
 toggleButtons.forEach((toggleButton, index) => {
-  toggleButton.addEventListener("click", () => {
-    faqs[index].classList.toggle("active");
-  });
+    toggleButton.addEventListener('click', () => {
+        faqs[index].classList.toggle('active');
+    });
 });
 
 // Another Solution
