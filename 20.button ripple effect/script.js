@@ -7,7 +7,7 @@ rippleBtns.forEach((button) => {
 
     const buttonLeft = button.offsetLeft;
     const buttonTop = button.offsetTop;
-    
+
     const circle = document.createElement("span");
     circle.classList.add("circle");
     circle.style.top = `${y - buttonTop}px`;
