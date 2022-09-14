@@ -14,19 +14,12 @@ const randomFunc = {
     symbol: getRandomSymbol
 };
 
-clipboardEl.addEventListener('click', () => {
-    const textarea = document.createElement('textarea');
+clipboardEl.addEventListener('click', async () => {
     const password = resultEl.innerText;
-
     if (!password) {
         return;
     }
-
-    textarea.value = password;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    textarea.remove();
+    await navigator.clipboard.writeText(password);
     alert('Password copied to clipboard!');
 });
 
