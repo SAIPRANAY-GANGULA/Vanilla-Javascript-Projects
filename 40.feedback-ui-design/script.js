@@ -11,7 +11,7 @@ ratingsContainer.addEventListener('click', (e) => {
         removeActive();
         e.target.parentNode.classList.add('active');
         selectedRating = e.target.nextElementSibling.innerHTML;
-    } 
+    }
     //targets small
     else if (e.target.parentNode.classList.contains('rating')
         && e.target.previousSibling
@@ -19,7 +19,7 @@ ratingsContainer.addEventListener('click', (e) => {
         removeActive();
         e.target.parentNode.classList.add('active');
         selectedRating = e.target.innerHTML;
-    } 
+    }
     //targeting rating div itself
     else if (e.target.classList.contains('rating')
         && e.target.children[1].nodeName === 'SMALL') {
